@@ -1,0 +1,34 @@
+<div class="body1">
+  <div #tipText class="tip"></div>
+  <div class="form_box">
+      <div class="up">用户名</div>
+          <label style="display:none"for="laber1">用户名：</label>
+          <input type = "text" id ="username"[(ngModel)]= "userInf.username" placeholder="请输入您的用户名" ><span #uText class="mistake"></span>
+          
+          <div class="up">密码</div>
+          <label  style="display:none" for="laber2">密码：</label>
+          <input type = "password" id="password1" [(ngModel)]= "userInf.password" placeholder="请输入您的密码"><span #ppText class="mistake"></span>
+
+          <div class="up">确认密码</div>
+          <label  style="display:none" ifor="laber2">确认密码：</label>
+          <input type = "password" id="password2" [(ngModel)]= "password2" placeholder="请确认您的密码"><span #pText class="mistake"></span>
+          <div class="up">性别</div>
+          <input type="radio" value="男" name="sex" id="sex1" [(ngModel)]="userInf.sex"><label for="sex1">男</label> &nbsp;&nbsp; 
+          <input type="radio" value="女" name="sex" id="sex2" [(ngModel)]="userInf.sex"><label for="sex2">女</label>
+       
+          <div class="up">年龄</div>
+          <label  style="display:none" for="laber2">年龄：</label>
+          <input type = "text"id="age" [(ngModel)] = "userInf.age" value = "">
+
+          <div class="up">手机号码</div>
+          <label  style="display:none" for="laber2">手机号码：</label>
+          <input type = "text"id="phone" [(ngModel)] = "userInf.phone" value = "" maxlength="11"><span #nText class="mistake"></span> 
+
+          <div class="up">邮箱</div>
+          <label  style="display:none" for="laber2">邮箱：</label>
+          <input type = "text"id="mailbox" [(ngModel)] = "userInf.mailbox" value = ""><span #mText class="mistake"></span>
+          <div>          
+            <input type="submit" name="login" id="btn" value="注册" (click)="confirm()"/>         
+          </div>
+  </div>
+</div>

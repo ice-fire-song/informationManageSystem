@@ -1,0 +1,15 @@
+* {
+    margin:0;
+    padding:0;
+    list-style:0;
+}
+a {
+    text-decoration: none;
+    color:blue;
+}
+
+
+body {
+    width:100%;
+	min-height: 100%
+} 

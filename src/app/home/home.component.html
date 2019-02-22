@@ -1,0 +1,22 @@
+<div Class="body1">
+  <div Class="head">
+    <h1>欢迎登陆</h1>
+  </div>
+  <div Class="main_box">
+    <div Class="form_box">
+          <div class="up">用户名</div>
+          <label style="display:none"for="laber1">用户名：</label>
+          <input type = "text" id ="username" [(ngModel)]="username" placeholder="请输入您的用户名"  />
+          <div class="up">密码</div>
+          <label  style="display:none" for="laber2">密码：</label>    
+          <input type = "password" id="password"  [(ngModel)]="password" placeholder="请输入您的密码" maxlength="16" />    
+          <div>          
+            <input type="submit" name="login" id="btn" value="登 录" (click)="login()" /> <a routerLink = "/searchOne" >忘记密码?</a>        
+          </div>     
+     </div>
+    <div ngClass="register_box">
+      <p>亲，你还没注册？赶快<a routerLink = "/register">注册</a>吧！</p>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,104 @@
+<div class="body1">
+  <button class="leave" (click)="goHome()">注销</button>
+  <div class="information">
+    <p class="head">个人信息</p>
+    <div class="form_box_self">
+         <div class="up">用户名: {{selfInf.username}}</div>
+        <div class="up">性别</div>
+        <input type="radio" value="男" name="sex" id="sex1" [(ngModel)]="selfInf.sex"><label for="sex1">男</label>&nbsp;&nbsp;
+        <input type="radio" value="女" name="sex" id="sex2" [(ngModel)]="selfInf.sex"><label for="sex2">女</label>
+     
+        <div class="up">年龄</div>
+        <label  style="display:none" for="laber2">年龄：</label>
+        <input type = "text" class="age" [(ngModel)] = "selfInf.age" value = "">
+
+        <div class="up">手机号码</div>
+        <label  style="display:none" for="laber2">手机号码：</label>
+        <input type = "text" class="phone" [(ngModel)] = "selfInf.phone" maxlength="11" value = "">
+
+        <div class="up">邮箱</div>
+        <label  style="display:none" for="laber2">邮箱：</label>
+        <input type = "text" class="mailbox" [(ngModel)] = "selfInf.mailbox" value = "">
+        <input type = "submit" id ="sBtn" value="修改" (click)="selfModify()">
+    </div>
+    <div #tip class="tip"></div>
+  </div>
+
+  <div class="allInf">
+      <div>
+          <h2>所有用户的信息</h2><span #numText class="numText">总人数: {{this.list.length}}</span> <button #hb class="hd_btn" (click)="hide()">隐藏</button> <button class="ud_btn" (click)="update()">刷新</button>
+      </div>
+      <div class="tableBox">
+        <table border="1" #table>
+          <tr>
+            <th class="num0">编号</th>
+            <th class="num">用户名</th>
+            <th class="num">密码</th>
+            <th class="num0">性别</th>
+            <th class="num0">年龄</th>
+            <th class="num">手机号码</th>
+            <th class="num">邮箱</th> 
+          
+         </tr>
+          <tr *ngFor="let item of list">
+            <td *ngFor ="let key of getkeys(item)" >{{item[key]}}</td>   
+          </tr>
+        </table>  
+      </div>
+      <div class="pageLeg">
+        <div class="jump">
+         <p class="pagesText">当前为第{{this.nowPages}}/{{this.pageSum}}页</p>     
+         <input id="jump_frame" [(ngModel)]="aim"><button class="jump_btn"(click)="jump()">跳转</button>
+        </div> 
+        <div class="ctl_btn">
+          <button (click)="goBack()" class="pre">上一页</button>
+          <button (click)="goOn()" class="aft">下一页</button>
+        </div>
+      </div>
+  </div>
+  
+  <div class="left_box">
+      <div class="ability">  
+          <div class="btn_set">
+           <input type="text" id="select" placeholder="请输入查询/删除的用户名" [(ngModel)]="dQUsername">
+            <div>
+              <button class="btn" (click)="query()">查询</button> 
+              <button class="btn" (click)="delete()">删除</button>
+            </div>
+          </div>
+      
+           <div class="form_box_other">
+              <div class="up">用户名</div>
+              <label style="display:none">用户名：</label>
+              <input type = "text" class="username"[(ngModel)]= "otherInf.username" placeholder="请输入用户名" >
+              
+              <div class="up">密码</div>
+              <label  style="display:none" >密码：</label>
+              <input type = "password" class="password" [(ngModel)]= "otherInf.password" placeholder="请输入密码">
+      
+              <div class="up">性别</div>
+              <input type="radio" value="男"  id="sex3" [(ngModel)]="otherInf.sex"><label for="sex3">男</label>&nbsp;&nbsp;  
+              <input type="radio" value="女"  id="sex4" [(ngModel)]="otherInf.sex"><label for="sex4">女</label>
+           
+              <div class="up">年龄</div>
+              <label  style="display:none" >年龄：</label>
+              <input type = "text" class="age" [(ngModel)] = "otherInf.age" value = "">
+      
+              <div class="up">手机号码</div>
+              <label  style="display:none" >手机号码：</label>
+              <input type = "text" class="phone" [(ngModel)] = "otherInf.phone" value = "">
+      
+              <div class="up">邮箱</div>
+              <label  style="display:none" >邮箱：</label>
+              <input type = "text" class="mailbox" [(ngModel)] = "otherInf.mailbox" value = "">
+              <div>          
+                <input type="submit" name="login" id ="oBtn" value="增加" (click)="insert()"/>       
+              </div>
+           </div>
+      
+            <div #otherTip class="otherTip"></div>
+  </div> 
+  
+  
+  
+</div>

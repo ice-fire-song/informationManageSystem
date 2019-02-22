@@ -1,0 +1,64 @@
+.body1 {
+    background: url("../../../assets/images/one.jpg");
+    position:fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+    z-index:-10;
+    zoom: 1;
+    background-color: #fff;
+    background-repeat: no-repeat;
+     background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+     background-position: center 0;
+}
+p {
+    text-align: center;
+    font-size: 40px;
+    color:orange;
+    margin-bottom: 14px;
+    margin-top: 8px;
+}
+.mainBox {
+    width:310px;
+    height:380px;
+    margin:50px auto;
+    border:1px solid grey;
+    border-radius: 4%;
+    box-shadow:grey 0px 0px 20px 2px inset;
+   
+}
+.dataBox {
+    width:232px;
+    margin:auto auto;
+}
+.text {
+    font-size: 30px;
+    margin-bottom: 6px;
+}
+#username,#phone {
+    width:230px;
+    height:50px;
+    margin-bottom: 6px;
+    font-size: 30px;
+    border-radius: 5%;
+    padding:2px;
+}
+#btn {
+    display: block;
+    width:80px;
+    height:40px;
+    font-size:20px;
+    /* margin-right:10px;
+    margin-top:10px; */
+    margin:4px auto;
+    border-radius:4%;
+    background-color: grey;
+}
+#btn:hover {
+    cursor: pointer;
+    background-color:#7ED321;
+    color: red;
+}

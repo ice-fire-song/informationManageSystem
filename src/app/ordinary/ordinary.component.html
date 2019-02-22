@@ -1,0 +1,47 @@
+<div class="body1">
+  <div class="information">
+    <p class="head">个人信息</p>
+    <div class="form_box_self">
+         <div class="up">用户名: {{selfInf.username}}</div>
+        <div class="up">性别</div>
+        <input type="radio" value="男" name="sex" id="sex1" [(ngModel)]="selfInf.sex"><label for="sex1">男</label>  
+        <input type="radio" value="女" name="sex" id="sex2" [(ngModel)]="selfInf.sex"><label for="sex2">女</label>
+       
+        <div class="up">年龄</div>
+        <label  style="display:none" for="laber2">年龄：</label>
+        <input type = "text" class="age" [(ngModel)] = "selfInf.age" value = "">
+
+        <div class="up">手机号码</div>
+        <label  style="display:none" for="laber2">手机号码：</label>
+        <input type = "text" class="phone" [(ngModel)] = "selfInf.phone" value = "">
+
+        <div class="up">邮箱</div>
+        <label  style="display:none" for="laber2">邮箱：</label>
+        <input type = "text" class="mailbox" [(ngModel)] = "selfInf.mailbox" value = "">
+        <button (click)="goModify()" id="btnl">>>修改</button> <button (click)="goHome()" id="btnr">注销</button>
+    </div> 
+  </div>
+  <div #modify class="modifyColunm">
+    <p class="head">修改栏</p><button class="X" (click)="hide()">X</button>
+    <div class="form_box_self">
+         <div class="up">用户名: {{cloneInf.username}}</div>
+        <div class="up">性别</div>
+        <input type="radio" value="男"  id="sex11" [(ngModel)]="cloneInf.sex"><label for="sex11">男</label>  
+        <input type="radio" value="女"  id="sex22" [(ngModel)]="cloneInf.sex"><label for="sex22">女</label>
+       
+        <div class="up">年龄</div>
+        <label  style="display:none" >年龄：</label>
+        <input type = "text" id="age" [(ngModel)] = "cloneInf.age" value = "">
+
+        <div class="up">手机号码</div>
+        <label  style="display:none" >手机号码：</label>
+        <input type = "text" id="phone" [(ngModel)] = "cloneInf.phone" value = "" maxlength="11">
+
+        <div class="up">邮箱</div>
+        <label  style="display:none">邮箱：</label>
+        <input type = "text" id="mailbox" [(ngModel)] = "cloneInf.mailbox" value = "">
+        <input type = "submit" class ="btn" value="确认修改" (click)="selfModify()">
+    </div> 
+    <div #tip class="tip"></div>
+  </div>
+</div>

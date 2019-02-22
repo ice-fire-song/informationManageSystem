@@ -1,0 +1,312 @@
+.body1{
+    background: url("../../assets/images/mbg.jpeg") no-repeat center;
+  
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+    z-index:-10;
+    zoom: 1;
+    background-color: #fff;
+    background-repeat: no-repeat;
+     background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+     background-position: center 0;
+     padding-top:10px;
+     padding-left:10px;
+     padding-right:20px;     
+     overflow: hidden;
+     display:flex;
+     flex-direction: row;
+}
+
+
+.leave {
+    position: absolute;
+    top:10px;
+    right:3%;
+    width:50px;
+    height:30px;
+    background-color: rgb(49, 218, 49);
+    font-size: 18px;
+}
+.leave:hover {
+    cursor: pointer;
+    background-color:pink;
+    color: orangered;
+}
+.head {
+   text-align: center;
+   margin-bottom: 8px;
+   font-size: 22px;
+   color:rgb(18, 202, 18);
+   font-weight: bold;
+}
+.information{
+  
+    
+    width:250px;
+    height:420px;
+    flex:0.5;
+    border:1px solid green;
+    box-shadow:5px 2px 6px green;
+    border-radius: 4%;  
+    margin-right:30px;
+   
+}
+.form_box_self {
+    width:230px;
+    height:400px;
+    margin:auto auto;
+  
+}
+#sBtn,#oBtn {
+    width:60px;
+    height:40px;
+    font-size:20px;
+    margin-right:10px;
+    margin-top:10px;
+    border-radius:10%;
+    background-color: rgb(49, 218, 49);
+}
+#sBtn:hover {
+    cursor: pointer;
+    background-color: pink;
+    color: red;
+}
+#oBtn:hover {
+    cursor: pointer;
+    background-color: pink;
+    color: red;
+}
+.tip {
+    width:250px;
+    margin-top:60px;
+    height:100px;
+ 
+    font-size: 20px;
+    color:red;
+    text-align: center;
+}
+
+.allInf{
+    width:930px;
+    height:700px;  
+    flex:1.8;
+    border:1px solid green;
+    border-radius: 1%;
+    box-shadow:-2px 0px 10px #f00,0px -2px 10px #000,0px 2px 10px #9e038a,2px 0px 10px #0f0;
+    background-color: pink;
+    
+}
+h2 {
+    color:rgb(52, 5, 105);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.tableBox {
+   overflow: auto;
+    width:100%;
+    height:560px;
+    color: black;
+    font-size: 20px;
+}
+.pageLeg {
+    height:40px;
+    position: relative;
+   
+}
+
+.jump {
+    height:22px;
+    width:260px;
+    float:left;
+    margin-top:6px;
+    display: flex;
+    flex-direction: row;
+ }
+ .pagesText {
+    flex:4;
+    font-size: 16px;
+
+}
+ #jump_frame {
+     width:10px;
+     flex:0.7;
+ }
+ .jump_btn {
+     flex:1;
+     margin-right: 5px;
+     font-size: 15px;
+     background-color: pink;
+}
+.jump_btn:hover {
+    cursor: pointer;
+    background-color: blue;
+}
+.ctl_btn {
+    width:25%;
+    height:30px;
+    margin:6px auto;
+  
+}
+
+.pre {
+    float:left;
+    height:30px;
+    width:75px;
+    background-color: green;
+    font-size: 18px;
+
+}
+.pre:hover {
+    cursor: pointer;
+    background-color: pink;
+}
+.aft {
+    float:right;
+    height:30px;
+    width:75px;
+    background-color: green;
+    font-size: 18px;
+
+}
+.aft:hover {
+    cursor: pointer;
+    background-color: pink;
+}
+.numText {
+    font-size:25px;
+    font-weight: bold;
+    color: red;
+    float:left;
+}
+
+.ud_btn {
+   
+    float:right;
+    width:50px;
+    height:30px;
+  
+    background-color: rgb(49, 218, 49);
+    font-size: 18px;
+}
+.hd_btn {
+    float:right;
+    
+    width:50px;
+    height:30px;
+    background-color: rgb(49, 218, 49);
+    font-size: 18px;
+}
+.ud_btn:hover {
+    cursor: pointer;
+    background-color:pink;
+    color: orangered;
+}
+.hd_btn:hover {
+    cursor: pointer;
+    background-color:pink;
+    color: orangered;
+}
+.num0{
+    width:74px;
+}
+.num{
+    width:180px;
+}
+
+.left_box {
+   
+    flex:0.8;
+    width:250px;
+    height:800px;
+
+}
+/*功能盒子*/
+.ability{
+   
+    height:80px;
+    margin:auto auto;
+  
+}
+
+/*功能按钮盒子*/
+.btn_set {
+    width:230px;
+    height: 90px;
+    margin:auto auto;
+  
+}
+#select {
+    width:220px;
+    line-height: 30px;
+    height:26px;
+    font-size:18px;
+    padding:4px;
+    border:1 #dedede solid;
+    margin-bottom: 4px;
+}
+.btn {
+    width:60px;
+    height:40px;
+    font-size:20px;
+    margin-right:6px;
+    margin-top:4px;
+    border-radius:10%;
+    background-color: rgb(49, 218, 49);
+}
+.btn:hover {
+    cursor: pointer;
+    background-color:pink;
+    color: orangered;
+}
+
+ /*“增加”功能中CSS*/
+.form_box_other {
+    width:230px;
+    height:450px;
+    padding:10px;
+    background-color: rgb(51, 198, 235);
+    margin:10px auto;
+    border:1px solid blue;
+    border-radius: 4%;
+    box-shadow: rgb(119, 83, 83) 0px 0px 20px 2px inset;
+    margin:auto auto;
+}
+.otherTip {
+    width:230px;
+    font-size: 18px;
+    color:red;
+    margin:auto auto;
+}
+.up{
+    font-size:22px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 4px;
+    background-color:transparent;
+    font-weight: bold;
+    
+}
+.password,.username{
+    line-height: 30px;
+    width:190px;
+    height:24px;
+    font-size:20px;
+    padding:2px;
+    border:1px #a19e9e solid;
+    background-color:transparent;
+
+}
+.age,.phone,.mailbox {
+    line-height: 30px;
+    height:24px;
+    width:190px;
+    font-size:20px;
+    padding:2px;
+    border:1px #a19e9e solid;
+    background-color:transparent;
+
+}
+
