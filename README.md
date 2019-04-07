@@ -1,3 +1,5 @@
+# 项目结构
+angular(前端) + golang(后端) + postgresql(数据库)
 # Cgw
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.1.
